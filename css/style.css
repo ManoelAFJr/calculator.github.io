@@ -1,0 +1,65 @@
+body{
+    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "open sans", sans-serif;
+    display: grid;
+    justify-content: center;
+}
+#relogio{
+    color: white;
+}
+.container{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "relogio resultado resultado resultado"
+    "limpar limpar limpar função"
+    " . . . função"
+    " . . . função"
+    " . . . função"
+    " zero zero . .";
+    background-color: black;
+    width: 300px;
+    padding: 10px;
+    grid-gap: 0.3rem;
+}
+.container button{
+    border: 0;
+    height: 4rem;
+    background-color: blanchedalmond;
+    box-shadow: 2px 2px 1px 1px rgb(255, 255, 255, 0.384);
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.botao{
+    color: black !important;
+}
+#resultado{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: resultado;
+    background: black;
+    color: white;
+    font-family: monospace;
+    padding: 10px;
+    font-size: 2rem;
+}
+#limpar{
+    grid-area: limpar;
+}
+.função {
+    background-color: rgb(255, 150, 3) !important;
+}
+.zero {
+    grid-area: zero;
+    color: black !important;
+}
+
+
+
+
+
+
+
