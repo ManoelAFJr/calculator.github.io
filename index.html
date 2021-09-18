@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stulesheet" href="css/style.css"/>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <span id="relogio"></span>
+        <script src="js/relogio.js"></script>
+        <div id="resultado">0</div>
+        <button type= "button" value="C" onclick="botao(this.value)" class="função">C</button>
+        <button type= "button" value="/" onclick="botao(this.value)" class="função">/</button>
+
+        <button type= "button" value="7" onclick="botao(this.value)" class="botao past">7</button>
+        <button type= "button" value="8" onclick="botao(this.value)" class="botao past">8</button>
+        <button type= "button" value="9" onclick="botao(this.value)" class="botao past">9</button>
+        <button type= "button" value="*" onclick="botao(this.value)" class="função">*</button>
+
+        <button type= "button" value="4" onclick="botao(this.value)" class="botao past">4</button>
+        <button type= "button" value="5" onclick="botao(this.value)" class="botao past">5</button>
+        <button type= "button" value="6" onclick="botao(this.value)" class="botao past">6</button>
+        <button type= "button" value="-" onclick="botao(this.value)" class="função">-</button>
+
+        <button type= "button" value="1" onclick="botao(this.value)" class="botao past">1</button>
+        <button type= "button" value="2" onclick="botao(this.value)" class="botao past">2</button>    
+        <button type= "button" value="3" onclick="botao(this.value)" class="botao past">3</button>
+        <button type= "button" value="+" onclick="botao(this.value)" class="função">+</button>
+
+        <button type= "button" value="0" onclick="botao(this.value)" class="zero">0</button>
+        <button type= "button" value="." onclick="botao(this.value)" class="função">.</button>
+        <button type= "button" value="=" onclick="botao(this.value)" class="função">=</button>
+    </div>
+</body>
+<script src="js/calculation.js"></script>
+</html>
